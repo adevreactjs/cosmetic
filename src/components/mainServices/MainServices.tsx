@@ -6,7 +6,7 @@ import moreImg from '../../assets/secondpic.jpg';
 import product1 from '../../assets/vitamina.jpg';
 import product2 from '../../assets/vitaminc.jpg';
 import product3 from '../../assets/sunscreen.jpg';
-import arrowlink from '../../assets/arrowlink.svg'
+import arrowlink from '../../assets/arrowlink.svg';
 
 const MainServices = () => {
   return (
@@ -157,6 +157,25 @@ const MainServices = () => {
           </div>
           <div className={styles.mainServices__products_btn}>
             <button>Записатися на прийом</button>
+          </div>
+        </div>
+      </section>
+      <section className={styles.mainServices__about}>
+        <div className={styles.container__service}>
+          <h2>про мене</h2>
+          <div className={styles.mainServices__features}>
+            <div className={styles.mainServices__feature}>
+              Косметолог з досвідом роботи більше 10 років
+            </div>
+            <div className={styles.mainServices__feature}>
+              Спеціалізуюсь по лікуванню та омолодженню шкіри
+            </div>
+            <div className={styles.mainServices__feature}>
+              Сертифікований спеціаліст із загальної терапії краси
+            </div>
+            <div className={styles.mainServices__feature}>
+              Більше 1000 постійних та задоволених клієнтів
+            </div>
           </div>
         </div>
       </section>
