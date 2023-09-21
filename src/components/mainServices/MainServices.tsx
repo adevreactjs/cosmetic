@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './index.module.scss';
-import mainpic from '../../assets/mainpic.jpg';
+import mainpic2 from '../../assets/mainpic.jpg';
+import mainpic from '../../assets/mainpic2.jpg';
 import moreBtn from '../../assets/learnmore.svg';
 import moreImg from '../../assets/secondpic.jpg';
 import product1 from '../../assets/vitamina.jpg';
@@ -14,7 +15,8 @@ const MainServices = () => {
       <section className={styles.mainServices}>
         <div className={styles.container}>
           <div className={styles.mainBanner}>
-            <img src={mainpic} alt='mainpic' />
+            <img id='mainpic' src={mainpic} alt='mainpic' />
+            <img id='mainpic2' src={mainpic2} alt='mainpic2' />
             <div className={styles.mainServices__roundcover}>
               <div className={styles.mainServices__round}>
                 <button className={styles.mainServices__btn}>
@@ -41,7 +43,7 @@ const MainServices = () => {
 
       <section className={styles.mainServices__items}>
         <div className={styles.container__service}>
-          <h2>послуги</h2>
+          <h2 id='service'>послуги</h2>
           <div className={styles.mainServices__wrapper}>
             <div className={styles.mainServices__item}>
               <span className={styles.mainServices__itemNumber}>01</span>
@@ -119,39 +121,39 @@ const MainServices = () => {
           <h2>Асортимент товарів</h2>
           <div className={styles.mainServices__products}>
             <div className={styles.mainServices__products__item}>
-              <span>продукти</span>
+              <span>Всі продукти</span>
               <img src={arrowlink} alt='arrowlink' />
             </div>
             <div className={styles.mainServices__products__item}>
-              <span>продукти</span>
+              <span>Висипи</span>
               <img src={arrowlink} alt='arrowlink' />
             </div>
             <div className={styles.mainServices__products__item}>
-              <span>продукти</span>
+              <span>Відновлення</span>
               <img src={arrowlink} alt='arrowlink' />
             </div>
             <div className={styles.mainServices__products__item}>
-              <span>продукти</span>
+              <span>Пігментація</span>
               <img src={arrowlink} alt='arrowlink' />
             </div>
             <div className={styles.mainServices__products__item}>
-              <span>продукти</span>
+              <span>Розширені пори</span>
               <img src={arrowlink} alt='arrowlink' />
             </div>
             <div className={styles.mainServices__products__item}>
-              <span>продукти</span>
+              <span>Почервоніння</span>
               <img src={arrowlink} alt='arrowlink' />
             </div>
             <div className={styles.mainServices__products__item}>
-              <span>продукти</span>
+              <span>Старіння шкіри</span>
               <img src={arrowlink} alt='arrowlink' />
             </div>
             <div className={styles.mainServices__products__item}>
-              <span>продукти</span>
+              <span>Очі та губи</span>
               <img src={arrowlink} alt='arrowlink' />
             </div>
             <div className={styles.mainServices__products__item}>
-              <span>продукти</span>
+              <span>Тіло</span>
               <img src={arrowlink} alt='arrowlink' />
             </div>
           </div>

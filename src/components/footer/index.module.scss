@@ -1,5 +1,6 @@
 .footer {
   padding-top: 60px;
+  padding-bottom: 80px;
   background-color: #17110d;
 }
 .footer__container {
@@ -86,10 +87,19 @@
 .footer__formField {
   display: flex;
   gap: 20px;
-  border-bottom: 1px solid #EBE4D6;
-  max-width: 275px;
+  border-bottom: 0.5px solid #ebe4d6;
+  width: 275px;
   input {
-    background: var(--brown, #17110D);
+    background: var(--brown, #17110d);
     padding-bottom: 10px;
+    color: var(--add, #9d968c);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 125%;
   }
+}
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }

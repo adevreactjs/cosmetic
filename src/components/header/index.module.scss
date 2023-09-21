@@ -6,6 +6,9 @@
   max-width: 1760px;
   margin: 0 auto;
   display: flex;
+}
+.header__wrapper {
+  display: flex;
   align-items: center;
 }
 .logo {
@@ -18,8 +21,9 @@
   ul {
     padding: 15px 36px;
     display: flex;
-    gap: 72px;
+    // gap: 72px;
     li {
+      padding: 0 26px;
       font-family: Rubik;
       font-size: 20px;
       font-style: normal;
@@ -43,8 +47,11 @@
   border-bottom: 1px solid #f6efe1;
   input {
     background: var(--brown, #17110d);
-    color: #f6efe1;
     line-height: 16px;
+    color: var(--add, #9d968c);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 125%;
   }
 }
 
@@ -52,5 +59,41 @@
   img {
     width: 37px;
     height: 53px;
+  }
+}
+
+@media (max-width: 1750px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .header__searchBar {
+    margin-left: 887px;
+  }
+}
+@media (max-width: 1328px) {
+  .logo {
+    margin-right: 160px;
+  }
+  .header__searchBar {
+    margin-left: 785px;
+  }
+}
+@media (max-width: 1281px) {
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  .logo {
+    margin-right: 134px;
+  }
+  .navbar {
+    ul {
+      li {
+        white-space: nowrap;
+      }
+    }
+  }
+  .header__searchBar {
+    margin-right: 43px;
   }
 }
