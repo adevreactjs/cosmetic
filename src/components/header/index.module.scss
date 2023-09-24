@@ -61,6 +61,9 @@
     height: 53px;
   }
 }
+.header__burger {
+  display: none;
+}
 
 @media (max-width: 1750px) {
   .container {
@@ -95,5 +98,20 @@
   }
   .header__searchBar {
     margin-right: 43px;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar {
+    display: none;
+  }
+  .container {
+    max-width: 584px;
+    flex-direction: row;
+  }
+  .header__burger {
+    display: block;
+  }
+   .logo {
+    margin-right: 0px;
   }
 }

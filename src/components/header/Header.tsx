@@ -3,6 +3,7 @@ import styles from './index.module.scss';
 import logo from './../../assets/logo.svg';
 import search from '../../assets/search.svg';
 import cart from '../../assets/cart.png';
+import burger from '../../assets/burger.png';
 
 const Header = () => {
   return (
@@ -31,6 +32,9 @@ const Header = () => {
           </div>
           <div className={styles.header__cart}>
             <img src={cart} alt='cart' />
+          </div>
+          <div className={styles.header__burger}>
+            <img src={burger} alt='burger' />
           </div>
         </div>
       </div>

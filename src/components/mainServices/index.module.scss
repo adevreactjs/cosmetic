@@ -129,7 +129,7 @@
 }
 .mainServices__products {
   background-color: #f6efe1;
-  padding-bottom: 325px;
+  padding-bottom: 160px;
 }
 .container__service {
   [id='service'] {
@@ -307,6 +307,13 @@
       cursor: pointer;
     }
   }
+  .mainServices__products__item {
+    width: 360px;
+    img {
+      width: 29.45px;
+      height: 29.451px;
+    }
+  }
 }
 @media (max-width: 1281px) {
   .container {
@@ -341,8 +348,16 @@
     left: -67px;
   }
   .container__service {
+    max-width: 1120px;
+    margin: 0 auto;
     [id='service'] {
       margin-bottom: 21px;
     }
   }
+  .mainServices__itemTitle {
+    top: 129px;
+  }
+  .mainServices__feature {
+  padding: 0 0px 40px 0px;
+}
 }
