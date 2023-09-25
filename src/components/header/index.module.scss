@@ -101,6 +101,9 @@
   }
 }
 @media (max-width: 1200px) {
+  .header {
+    padding-bottom: 32px;
+  }
   .navbar {
     display: none;
   }
@@ -111,7 +114,22 @@
   .header__burger {
     display: block;
   }
-   .logo {
-    margin-right: 0px;
+  .logo {
+    img {
+      width: 31.671px;
+      height: 34px;
+    }
+
+    margin-right: 169px;
   }
+
+  .header__searchBar {
+    width: 182px;
+    margin-left: 0;
+    margin-right: 79px;
+  }
+  .header__cart {
+    margin-right: 79px;
+  }
+ 
 }

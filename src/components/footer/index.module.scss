@@ -98,7 +98,7 @@
     line-height: 125%;
   }
 }
-.footer__wrapper {
+.footer__wrapperField {
   display: flex;
   gap: 20px;
 }
@@ -109,5 +109,25 @@
   }
   .footer__info {
     margin-left: 104px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer__container {
+    max-width: 584px;
+    margin: 0 auto;
+  }
+  .footer__wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+  .footer__form {
+    margin-left: 0;
+  }
+  .footer__info {
+    margin-left: 0;
+    gap: 112px;
   }
 }

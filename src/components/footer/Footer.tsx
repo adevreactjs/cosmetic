@@ -61,7 +61,7 @@ const Footer = () => {
               <div className={styles.footer__formField}>
                 <input type='text' placeholder='Номер телефону або пошта' />
               </div>
-              <div className={styles.footer__wrapper}>
+              <div className={styles.footer__wrapperField}>
                 <div className={styles.footer__formField}>
                   <input type='text' placeholder='Що Вас цікавить?' />
                 </div>

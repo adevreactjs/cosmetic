@@ -57,6 +57,8 @@ const MainServices = () => {
                 Масаж обличчя для покрщення стану шкіри та необхідні доглядові поцедури
               </div>
             </div>
+            <div className={styles.mainServices__separate}></div>
+
             <div className={styles.mainServices__item}>
               <span className={styles.mainServices__itemNumber}>03</span>
               <div className={styles.mainServices__itemTitle}>
@@ -69,6 +71,7 @@ const MainServices = () => {
                 Мезотерапія та біоревіталізація для відновлення шкіри
               </div>
             </div>
+            <div className={styles.mainServices__separate}></div>
           </div>
         </div>
       </section>
@@ -78,20 +81,71 @@ const MainServices = () => {
           <h2>Продукція csa</h2>
           <div className={styles.mainServices__wrapper}>
             <div className={styles.mainServices__product}>
-              <img src={product2} alt='product2' />
-              <p>Вітамін C</p>
+              <div className={styles.mainServices__product}>
+                <div className={styles.mainServices__productwrapper}>
+                  <img src={product2} alt='product2' />
+                  <div className={styles.mainServices__productdesc}>
+                    <h4>Вітамін C</h4>
+                    <p>
+                      Створені неймовірно потужні формули в ретельно стабілізованих сполуках
+                      підживлять вашу шкіру
+                    </p>
+                    <button>Дізнатися більше</button>
+                    <div className={styles.mainServices__moreImg}>
+                      <svg
+                        xmlns='http://www.w3.org/2000/svg'
+                        width='75'
+                        height='12'
+                        viewBox='0 0 75 12'
+                        fill='none'>
+                        <path
+                          d='M0.5 6H74M74 6L68.5 1M74 6L68.5 11'
+                          stroke='#17110D'
+                          stroke-linecap='round'
+                          stroke-linejoin='round'
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <p className={styles.mainServices__productTitle}>Вітамін C</p>
+              </div>
               <div className={styles.mainServices__productHover__item}>
-                <h4>Вітамін</h4>
+                <h4>Сонцезахист</h4>
                 <p>
-                  Створені неймовірно потужні формули в ретельно стабілізованих сполуках підживлять
-                  вашу шкіру
+                  Ключова антивікова філософія передбачає щоденне застосування сонцезахисного крему
                 </p>
                 <button>Дізнатися більше</button>
               </div>
             </div>
             <div className={styles.mainServices__product}>
-              <img src={product3} alt='product3' />
-              <p>Сонцезахист</p>
+              <div className={styles.mainServices__productwrapper}>
+                <img src={product3} alt='product3' />
+                <div className={styles.mainServices__productdesc}>
+                  <h4>Сонцезахист</h4>
+                  <p>
+                    Ключова антивікова філософія передбачає щоденне застосування сонцезахисного
+                    крему{' '}
+                  </p>
+                  <button>Дізнатися більше</button>
+                  <div className={styles.mainServices__moreImg}>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      width='75'
+                      height='12'
+                      viewBox='0 0 75 12'
+                      fill='none'>
+                      <path
+                        d='M0.5 6H74M74 6L68.5 1M74 6L68.5 11'
+                        stroke='#17110D'
+                        stroke-linecap='round'
+                        stroke-linejoin='round'
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <p className={styles.mainServices__productTitle}>Сонцезахист</p>
               <div className={styles.mainServices__productHover__item}>
                 <h4>Сонцезахист</h4>
                 <p>
@@ -102,8 +156,32 @@ const MainServices = () => {
               </div>
             </div>
             <div className={styles.mainServices__product}>
-              <img src={product1} alt='product1' />
-              <p>Вітамін А</p>
+              <div className={styles.mainServices__productwrapper}>
+                <img src={product1} alt='product1' />
+                <div className={styles.mainServices__productdesc}>
+                  <h4>Вітамін A</h4>
+                  <p>
+                    Це золотий стандарт догляду за шкірою, який забезпечить Вам красу на все життя{' '}
+                  </p>
+                  <button>Дізнатися більше</button>
+                  <div className={styles.mainServices__moreImg}>
+                    <svg
+                      xmlns='http://www.w3.org/2000/svg'
+                      width='75'
+                      height='12'
+                      viewBox='0 0 75 12'
+                      fill='none'>
+                      <path
+                        d='M0.5 6H74M74 6L68.5 1M74 6L68.5 11'
+                        stroke='#17110D'
+                        stroke-linecap='round'
+                        stroke-linejoin='round'
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <p className={styles.mainServices__productTitle}>Вітамін А </p>
               <div className={styles.mainServices__productHover__item}>
                 <h4>Вітамін А</h4>
                 <p>
