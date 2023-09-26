@@ -35,7 +35,9 @@ const MainServices = () => {
           </div>
           <div className={styles.mainServices__title}>
             <h2>подбай про</h2>
-            <p>свою шкіру</p>
+            <p>
+              свою <span>шкіру</span>
+            </p>
           </div>
           <div></div>
         </div>
