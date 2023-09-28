@@ -5,37 +5,38 @@ import arrow from '../../assets/arrowback.svg';
 import person from '../../assets/personl.svg';
 import arrowsend from '../../assets/arrowsend.svg';
 
-
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__container}>
         <div className={styles.footer__socials}>
           <img src={arrow} alt='arrow' />
-          <img src={insta} alt='insta' />
+          <img id='insta' src={insta} alt='insta' />
         </div>
         <div className={styles.footer__wrapper}>
           <div className={styles.footer__info}>
-            <div className={styles.footer__navigation}>
-              <div className={styles.footer__signIn}>
-                <img src={person} alt='person' />
-                <span>Увійти</span>
+            <div className={styles.footer__infoWrapper}>
+              <div className={styles.footer__navigation}>
+                <div className={styles.footer__signIn}>
+                  <img src={person} alt='person' />
+                  <span>Увійти</span>
+                </div>
+                <div className={styles.footer__navlink}>
+                  <ul>
+                    <li>Головна</li>
+                    <li>Послуги</li>
+                    <li>Про мене</li>
+                  </ul>
+                </div>
               </div>
-              <div className={styles.footer__navlink}>
+              <div className={styles.footer__products}>
                 <ul>
-                  <li>Головна</li>
-                  <li>Послуги</li>
-                  <li>Про мене</li>
+                  <li>Продукція CSA</li>
+                  <li>Вітамін С</li>
+                  <li>Сонцезахист</li>
+                  <li>Вітамін А</li>
                 </ul>
               </div>
-            </div>
-            <div className={styles.footer__products}>
-              <ul>
-                <li>Продукція CSA</li>
-                <li>Вітамін С</li>
-                <li>Сонцезахист</li>
-                <li>Вітамін А</li>
-              </ul>
             </div>
             <div className={styles.footer__products}>
               <ul>

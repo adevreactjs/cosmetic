@@ -135,6 +135,9 @@
   }
 }
 @media (max-width: 660px) {
+  .header {
+    padding-top: 30px;
+  }
   .container {
     max-width: 330px;
     align-items: center;
@@ -147,6 +150,10 @@
       width: 27.327px;
       height: 29px;
     }
+  }
+  .header__wrapper {
+    width: 100%;
+    justify-content: space-between;
   }
   .header__searchBar {
     position: absolute;

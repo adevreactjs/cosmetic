@@ -238,7 +238,9 @@ const MainServices = () => {
             </div>
           </div>
           <div className={styles.mainServices__products_btn}>
-            <button>Записатися на прийом</button>
+            <button>
+              Записатися <span>на прийом</span>
+            </button>
           </div>
         </div>
       </section>

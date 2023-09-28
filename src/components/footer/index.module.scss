@@ -65,6 +65,7 @@
         font-weight: 600;
         line-height: 125%;
         margin-bottom: 10px;
+        white-space: nowrap;
       }
     }
   }
@@ -129,5 +130,44 @@
   .footer__info {
     margin-left: 0;
     gap: 112px;
+  }
+}
+@media (max-width: 660px) {
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .footer__container {
+    max-width: 330px;
+    position: relative;
+  }
+  .footer__socials {
+    justify-content: flex-end;
+
+    [id='insta'] {
+      position: absolute;
+      left: -5px;
+      bottom: -47px;
+    }
+  }
+  .footer__form {
+    h5 {
+      font-size: 14px;
+    }
+  }
+  .footer__formField {
+    gap: 0;
+    justify-content: space-between;
+    input {
+      font-size: 12px;
+    }
+  }
+  .footer__info {
+    gap: 60px;
+  }
+  .footer__infoWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
