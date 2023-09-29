@@ -254,9 +254,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   gap: 20px;
 }
 .mainServices__feature {
+  width: 425px;
   padding: 0 60px 40px 60px;
   color: var(--brown, #17110d);
   text-align: center;
@@ -713,3 +715,6 @@
   }
 
 }
+
+//menu
+

@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   padding-top: 80px;
   background: var(--brown, #17110d);
 }
@@ -177,5 +178,75 @@
   }
   .header {
     padding-bottom: 30px;
+  }
+}
+//menu
+@media (max-width: 744px) {
+  .header__menu {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--light, #f6efe1);
+    padding-bottom: 146px;
+    z-index: 2;
+  }
+  .header__container {
+    max-width: 584px;
+    margin: 0 auto;
+  }
+  .header__navBar {
+    padding: 28px 0 32px 0;
+    display: flex;
+    align-items: center;
+  }
+  .header__logo {
+    margin-right: 169px;
+  }
+  .header__search {
+    width: 182px;
+    margin-right: 79px;
+    display: flex;
+    border-bottom: 1px solid #17110d;
+
+    input {
+      background: var(--light, #f6efe1);
+    }
+  }
+  .header__cart {
+    margin-right: 84px;
+  }
+  .header__closeBtn {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .header__menuItems {
+    margin-top: 203px;
+    margin-bottom: 290px;
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 60px;
+
+      li {
+        text-align: center;
+        color: var(--brown, #17110d);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 125%; /* 25px */
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        cursor: pointer;
+      }
+    }
+  }
+  .header__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
