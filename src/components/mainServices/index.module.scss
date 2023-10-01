@@ -704,17 +704,16 @@
       }
     }
   }
+
+  .mainServices__features {
+    justify-content: flex-start;
+  }
   .mainServices__feature {
     font-size: 18px;
     font-weight: 400;
     text-align: left;
   }
   .mainServices__about {
-        padding-bottom: 100px;
-
+    padding-bottom: 100px;
   }
-
 }
-
-//menu
-

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './index.module.scss';
 import logo from './../../assets/logo.svg';
 import search from '../../assets/search.svg';
@@ -7,6 +7,7 @@ import burger from '../../assets/burger.png';
 import cross from '../../assets/cross.png';
 
 const Header = () => {
+  const [isOpened, setIsOpened] = useState(true);
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -39,7 +40,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <section className={styles.header__menu}>
+      {isOpened && <section className={styles.header__menu}>
         <div className={styles.header__container}>
           <nav className={styles.header__navBar}>
             <div className={styles.header__logo}>
@@ -138,7 +139,7 @@ const Header = () => {
             </svg>
           </div>
         </div>
-      </section>
+      </section>}
     </header>
   );
 };
