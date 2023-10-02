@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './index.module.scss';
 import Breadcrumb from '../breadcrumb/Breadcrumb';
+import ProductCart from '../productCart/ProductCart';
 
 const Products = () => {
   const breadcrumbItems = ['Головна', 'Продукція CSA', 'Вітамін А'];
@@ -30,6 +31,7 @@ const Products = () => {
             іноді відбувається при застосуванні продуктів інших брендів.
           </p>
         </div>
+        <ProductCart/>
       </div>
     </section>
   );
