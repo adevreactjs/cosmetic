@@ -31,7 +31,9 @@ const Products = () => {
             іноді відбувається при застосуванні продуктів інших брендів.
           </p>
         </div>
-        <ProductCart/>
+        <div className={styles.productItems}>
+          <ProductCart />
+        </div>
       </div>
     </section>
   );
