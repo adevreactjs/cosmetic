@@ -2,14 +2,15 @@
   background: #f6efe1;
 }
 .container {
-  display: flex;
-  flex-direction: column;
   max-width: 1760px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 .title {
-    max-width: 870px;
-    padding-bottom: 80px;
+  max-width: 870px;
+  padding-bottom: 80px;
   h1 {
     color: var(--brown, #17110d);
     font-size: 42px;
@@ -28,5 +29,10 @@
 }
 
 .productItems {
-  flex-grow: 1;
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 20px;
+  padding-bottom: 160px;
 }

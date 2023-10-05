@@ -30,6 +30,7 @@
 .cartInfo {
   display: flex;
   button {
+    width: -webkit-fill-available;
     color: var(--light, #f6efe1);
     font-size: 20px;
     font-weight: 400;

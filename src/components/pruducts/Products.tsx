@@ -16,6 +16,7 @@ const Products = () => {
     { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 8 },
     { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 9 },
     { image: '', title: 'Retinol 3tr', volume: 15, price: 1624, id: 10 },
+ 
   ];
 
   return (
@@ -32,7 +33,9 @@ const Products = () => {
           </p>
         </div>
         <div className={styles.productItems}>
-          <ProductCart />
+          {products.map(product => (
+            <ProductCart key={product.id} />
+          ))}
         </div>
       </div>
     </section>
