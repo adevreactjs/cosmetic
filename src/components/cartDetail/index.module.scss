@@ -7,7 +7,7 @@
 }
 .info {
   display: flex;
-  padding-bottom: 159px;
+  padding-bottom: 351px;
 }
 .description {
   max-width: 720px;
@@ -72,7 +72,7 @@
   margin-top: 103px;
   display: flex;
   flex-direction: column;
-justify-content: space-between;
+  justify-content: space-between;
 }
 .featuresTitle {
   display: flex;
@@ -93,4 +93,32 @@ justify-content: space-between;
   line-height: 125%;
   padding: 15px 120px;
   cursor: pointer;
+}
+.infoDetail {
+  padding-bottom: 164px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  h3 {
+    height: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 125%;
+    text-transform: none;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    white-space: nowrap;
+    overflow: visible;
+
+    &:nth-child(2) {
+    }
+  }
+  p {
+    width: 1409px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 125%;
+    text-align: justify;
+  }
 }
