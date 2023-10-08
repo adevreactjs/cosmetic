@@ -21,8 +21,10 @@ const CartDetail = () => {
             <div className={styles.infoWrapper}>
               <img src={cream} alt='cream' />
               <div className={styles.description}>
-                <h1>crystal retinal</h1>
-                <h4>Нічна сироватка зі стабільним ретиналем</h4>
+                <div className={styles.mainTitle}>
+                  <h1>crystal retinal</h1>
+                  <h4>Нічна сироватка зі стабільним ретиналем</h4>
+                </div>
                 <p>
                   Знову відкрийте молодість шкіри завдяки Crystal Retinal. В основі формули —
                   стабілізований ретиналь — потужне похідне вітаміну А разом з антивіковою
@@ -127,74 +129,74 @@ const CartDetail = () => {
                 </div>
               </div>
               <div className={styles.featuresWrapper}>
-              <div className={styles.featuresTitle}>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='27'
-                  height='21'
-                  viewBox='0 0 27 21'
-                  fill='none'>
-                  <path
-                    d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
-                    stroke='#17110D'
-                    stroke-width='0.904762'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                  />
-                </svg>
-                <span>Внесок у фонд ZIPPER</span>
-              </div>
-              <div className={styles.featuresTitle}>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='27'
-                  height='21'
-                  viewBox='0 0 27 21'
-                  fill='none'>
-                  <path
-                    d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
-                    stroke='#17110D'
-                    stroke-width='0.904762'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                  />
-                </svg>
-                <span>Без штучних ароматизаторів</span>
-              </div>
-              <div className={styles.featuresTitle}>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='27'
-                  height='21'
-                  viewBox='0 0 27 21'
-                  fill='none'>
-                  <path
-                    d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
-                    stroke='#17110D'
-                    stroke-width='0.904762'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                  />
-                </svg>
-                <span>Не тестується на тваринах</span>
-              </div>
-              <div className={styles.featuresTitle}>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='27'
-                  height='21'
-                  viewBox='0 0 27 21'
-                  fill='none'>
-                  <path
-                    d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
-                    stroke='#17110D'
-                    stroke-width='0.904762'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                  />
-                </svg>
-                <span>Підходить для веганів</span>
-              </div>
+                <div className={styles.featuresTitle}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='27'
+                    height='21'
+                    viewBox='0 0 27 21'
+                    fill='none'>
+                    <path
+                      d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
+                      stroke='#17110D'
+                      stroke-width='0.904762'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    />
+                  </svg>
+                  <span>Внесок у фонд ZIPPER</span>
+                </div>
+                <div className={styles.featuresTitle}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='27'
+                    height='21'
+                    viewBox='0 0 27 21'
+                    fill='none'>
+                    <path
+                      d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
+                      stroke='#17110D'
+                      stroke-width='0.904762'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    />
+                  </svg>
+                  <span>Без штучних ароматизаторів</span>
+                </div>
+                <div className={styles.featuresTitle}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='27'
+                    height='21'
+                    viewBox='0 0 27 21'
+                    fill='none'>
+                    <path
+                      d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
+                      stroke='#17110D'
+                      stroke-width='0.904762'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    />
+                  </svg>
+                  <span>Не тестується на тваринах</span>
+                </div>
+                <div className={styles.featuresTitle}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='27'
+                    height='21'
+                    viewBox='0 0 27 21'
+                    fill='none'>
+                    <path
+                      d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
+                      stroke='#17110D'
+                      stroke-width='0.904762'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    />
+                  </svg>
+                  <span>Підходить для веганів</span>
+                </div>
               </div>
             </div>
           </div>
