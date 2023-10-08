@@ -56,74 +56,77 @@ const CartDetail = () => {
             </div>
 
             <div className={styles.features}>
-              <div className={styles.featuresTitle}>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='27'
-                  height='21'
-                  viewBox='0 0 27 21'
-                  fill='none'>
-                  <path
-                    d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
-                    stroke='#17110D'
-                    stroke-width='0.904762'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                  />
-                </svg>
-                <span>Без синтетичних фарбників</span>
+              <div className={styles.featuresWrapper}>
+                <div className={styles.featuresTitle}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='27'
+                    height='21'
+                    viewBox='0 0 27 21'
+                    fill='none'>
+                    <path
+                      d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
+                      stroke='#17110D'
+                      stroke-width='0.904762'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    />
+                  </svg>
+                  <span>Без синтетичних фарбників</span>
+                </div>
+                <div className={styles.featuresTitle}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='27'
+                    height='21'
+                    viewBox='0 0 27 21'
+                    fill='none'>
+                    <path
+                      d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
+                      stroke='#17110D'
+                      stroke-width='0.904762'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    />
+                  </svg>
+                  <span>Без спирту</span>
+                </div>
+                <div className={styles.featuresTitle}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='27'
+                    height='21'
+                    viewBox='0 0 27 21'
+                    fill='none'>
+                    <path
+                      d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
+                      stroke='#17110D'
+                      stroke-width='0.904762'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    />
+                  </svg>
+                  <span>Без парабенів</span>
+                </div>
+                <div className={styles.featuresTitle}>
+                  <svg
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='27'
+                    height='21'
+                    viewBox='0 0 27 21'
+                    fill='none'>
+                    <path
+                      d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
+                      stroke='#17110D'
+                      stroke-width='0.904762'
+                      stroke-linecap='round'
+                      stroke-linejoin='round'
+                    />
+                  </svg>
+                  <span>Без фталатів</span>
+                </div>
               </div>
-              <div className={styles.featuresTitle}>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='27'
-                  height='21'
-                  viewBox='0 0 27 21'
-                  fill='none'>
-                  <path
-                    d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
-                    stroke='#17110D'
-                    stroke-width='0.904762'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                  />
-                </svg>
-                <span>Без спирту</span>
-              </div>
-              <div className={styles.featuresTitle}>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='27'
-                  height='21'
-                  viewBox='0 0 27 21'
-                  fill='none'>
-                  <path
-                    d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
-                    stroke='#17110D'
-                    stroke-width='0.904762'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                  />
-                </svg>
-                <span>Без парабенів</span>
-              </div>
-              <div className={styles.featuresTitle}>
-                <svg
-                  xmlns='http://www.w3.org/2000/svg'
-                  width='27'
-                  height='21'
-                  viewBox='0 0 27 21'
-                  fill='none'>
-                  <path
-                    d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
-                    stroke='#17110D'
-                    stroke-width='0.904762'
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                  />
-                </svg>
-                <span>Без фталатів</span>
-              </div>
+              <div className={styles.featuresWrapper}>
               <div className={styles.featuresTitle}>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -191,6 +194,7 @@ const CartDetail = () => {
                   />
                 </svg>
                 <span>Підходить для веганів</span>
+              </div>
               </div>
             </div>
           </div>

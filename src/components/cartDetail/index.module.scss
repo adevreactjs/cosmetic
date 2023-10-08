@@ -79,7 +79,12 @@
   margin-top: 103px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 21px;
+}
+.featuresWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
 }
 .featuresTitle {
   display: flex;
@@ -140,13 +145,15 @@
   padding-bottom: 160px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1780px) {
   .container {
-    max-width: 1280px;
+    max-width: 1120px;
     margin: 0 auto;
   }
   .info {
     flex-direction: column;
+    padding-bottom: 260px;
+
     img {
       width: 550px;
       height: 624px;
@@ -173,5 +180,24 @@
   .features {
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 60px;
+  }
+  .featuresWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  .featuresTitle {
+    width: 549px;
+  }
+  .infoDetail {
+    width: 1132px;
+
+    p {
+      width: 768px;
+    }
+  }
+  .products {
+    width: 1120px;
   }
 }
