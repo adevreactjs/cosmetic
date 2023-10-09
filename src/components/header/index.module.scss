@@ -182,6 +182,9 @@
 }
 //menu
 @media (max-width: 1200px) {
+  .header {
+    height: 19vh;
+  }
   .header__menu {
     width: 100%;
     position: absolute;
@@ -281,7 +284,7 @@
   .header__menu {
     padding: 30px 15px 40px 15px;
   }
-   .header__container {
+  .header__container {
     max-width: 290px;
     margin: 0 auto;
   }

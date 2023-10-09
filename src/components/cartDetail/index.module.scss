@@ -1,5 +1,6 @@
 .cart {
   background: #f6efe1;
+  overflow: hidden;
 }
 .container {
   max-width: 1760px;
@@ -267,7 +268,7 @@
         margin-bottom: 40px;
         color: rgba(23, 17, 13, 0.7);
       }
-       &:nth-child(5) {
+      &:nth-child(5) {
         color: rgba(23, 17, 13, 0.7);
       }
     }
