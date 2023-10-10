@@ -7,15 +7,12 @@
   top: 0;
   left: 0;
   padding: 80px 147px;
- 
-  
 }
 .container {
   width: 1440px;
   margin: 0 auto;
   padding-bottom: 60px;
   padding-top: 60px;
-   
 }
 .cartWrapper {
   width: 1600px;
@@ -24,7 +21,6 @@
 }
 .cartItems {
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 80px;
   font-weight: 100;
@@ -69,6 +65,7 @@
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 83px;
+  margin-top: 22px;
   h2 {
     font-size: 24px;
     font-weight: 700;

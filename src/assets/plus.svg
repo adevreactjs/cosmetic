@@ -1,0 +1,7 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="plus">
+<rect id="ver" x="20" y="10" width="1" height="19" fill="#17110D"/>
+<rect id="hor" x="30" y="19" width="1" height="19" transform="rotate(90 30 19)" fill="#17110D"/>
+<rect x="0.5" y="0.5" width="39" height="39" stroke="#9D968C"/>
+</g>
+</svg>

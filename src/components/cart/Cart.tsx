@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './index.module.scss';
+import CartItem from '../cartItem/CartItem';
 
 const Cart = () => {
   return (
@@ -38,7 +39,9 @@ const Cart = () => {
             <h4 className={styles.infoCount}>Кількість</h4>
             <h4 className={styles.infoSum}>Всього</h4>
           </div>
-          <div className={styles.cartItems}>Корзина порожня</div>
+          <div className={styles.cartItems}>{
+            <CartItem/>
+          }</div>
           <div className={styles.sum}>
             <h2>Всього:</h2>
             <span>4200</span>
