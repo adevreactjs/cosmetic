@@ -33,7 +33,8 @@ const CartItem = () => {
           <button className={styles.minusBtn}>
             <img src={minus} alt='minus' />
           </button>
-          <span className={styles.countNumber}>1</span>
+          
+          <div className={styles.countNumber}>1</div>
           <button className={styles.plusBtn}>
             <img src={plus} alt='plus' />
           </button>
