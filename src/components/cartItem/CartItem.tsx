@@ -33,14 +33,14 @@ const CartItem = () => {
           <button className={styles.minusBtn}>
             <img src={minus} alt='minus' />
           </button>
-          
+
           <div className={styles.countNumber}>1</div>
           <button className={styles.plusBtn}>
             <img src={plus} alt='plus' />
           </button>
         </div>
-        <div className={styles.fullPrice}>
-          <span>2184</span>
+        <div className={styles.price}>
+          2184
           <svg
             xmlns='http://www.w3.org/2000/svg'
             width='10'

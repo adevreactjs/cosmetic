@@ -1,7 +1,11 @@
 .cartItem {
   display: flex;
-  border-bottom: 1px solid #9d968c;
+  // border-bottom: 1px solid #9d968c;
   padding-bottom: 40px;
+  -webkit-box-shadow:0px 1px 0px #9d968c;
+ -moz-box-shadow:0px 1px 0px #9d968c;
+ box-shadow:0px 1px 0px #9d968c;
+
 }
 .cartInfo {
   width: 575px;
@@ -62,8 +66,8 @@
 .countNumber {
   width: 60px;
   height: 40px;
-  //  box-shadow: 0px 0px 0px 1px #9D968C;
-   border: thin solid #9D968C;
+   box-shadow: 0px 0px 0px 1px #9D968C;
+  //  border: thin solid #9D968C;
   font-size: 20px;
   font-weight: 400;
   line-height: 125%;
