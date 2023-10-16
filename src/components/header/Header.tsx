@@ -5,11 +5,12 @@ import search from '../../assets/search.svg';
 import cart from '../../assets/cart.png';
 import burger from '../../assets/burger.png';
 import cross from '../../assets/cross.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isOpened, setIsOpened] = useState(false);
   console.log(isOpened);
-  
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -21,7 +22,7 @@ const Header = () => {
             <ul>
               <li>головна</li>
               <li>послуги</li>
-              <li>продукція csa</li>
+              <Link to='/products'><li>продукція csa</li></Link>
               <li>асортимент товарів</li>
               <li>про мене</li>
             </ul>
