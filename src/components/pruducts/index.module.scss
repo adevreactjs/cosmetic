@@ -29,10 +29,11 @@
 }
 
 .productItems {
-  flex: 1;
-  overflow-y: auto;
   display: flex;
   flex-wrap: wrap;
   gap: 60px 20px;
   padding-bottom: 160px;
+}
+.products {
+  overflow: scroll;
 }

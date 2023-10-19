@@ -4,16 +4,22 @@ import Footer from './components/footer/Footer';
 import Products from './components/pruducts/Products';
 import CartDetail from './components/cartDetail/CartDetail';
 import Cart from './components/cart/Cart';
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <div className='App'>
-        <Header />
-        <MainServices/>
-        {/* <Products/> */}
-        {/* <CartDetail /> */}
-        {/* <Cart/> */}
-        <Footer />
+      <div className='wrapper'>
+        <div>
+          <Header/>
+        </div>
+        <div className='main'>
+          <Products/>
+        </div>
+        <div>
+          <Footer/>
+        </div>
+      </div>
     </div>
   );
 }

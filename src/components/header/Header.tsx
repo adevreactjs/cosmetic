@@ -20,9 +20,13 @@ const Header = () => {
           </div>
           <nav className={styles.navbar}>
             <ul>
-              <li>головна</li>
+              <Link to='/'>
+                <li>головна</li>
+              </Link>
               <li>послуги</li>
-              <Link to='/products'><li>продукція csa</li></Link>
+              <Link to='/products'>
+                <li>продукція csa</li>
+              </Link>
               <li>асортимент товарів</li>
               <li>про мене</li>
             </ul>

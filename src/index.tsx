@@ -5,15 +5,22 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Products from './components/pruducts/Products';
+import MainServices from './components/mainServices/MainServices';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-  },
-  {
-    path: '/products',
-    element: <Products />,
+    children: [
+      {
+        path: '/products',
+        element: <Products />,
+      },
+      {
+        path: '/',
+        element: <MainServices />,
+      },
+    ],
   },
 ]);
 
@@ -21,7 +28,6 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
   <React.StrictMode>
     <RouterProvider router={router} />
-    {/* <App /> */}
   </React.StrictMode>,
 );
 
