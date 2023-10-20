@@ -10,15 +10,11 @@ function App() {
   return (
     <div className='App'>
       <div className='wrapper'>
-        <div>
           <Header/>
-        </div>
         <div className='main'>
           <Products/>
         </div>
-        <div>
           <Footer/>
-        </div>
       </div>
     </div>
   );
