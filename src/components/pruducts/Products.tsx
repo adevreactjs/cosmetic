@@ -2,8 +2,12 @@ import React from 'react';
 import styles from './index.module.scss';
 import Breadcrumb from '../breadcrumb/Breadcrumb';
 import ProductCart from '../productCart/ProductCart';
+import { useQuery } from '@apollo/client';
+import { GET_ALL_PRODUCTS } from '../../query/products';
 
 const Products = () => {
+  const {data, loading, error} = useQuery(GET_ALL_PRODUCTS)
+  console.log(data)
   const breadcrumbItems = ['Головна', 'Продукція CSA', 'Вітамін А'];
   const products = [
     { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 1 },

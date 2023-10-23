@@ -12,7 +12,7 @@ function App() {
       <div className='wrapper'>
           <Header/>
         <div className='main'>
-          <Products/>
+          <Outlet/>
         </div>
           <Footer/>
       </div>

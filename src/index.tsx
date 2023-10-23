@@ -6,11 +6,18 @@ import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Products from './components/pruducts/Products';
 import MainServices from './components/mainServices/MainServices';
+import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
+
+const client = new ApolloClient({
+  uri: 'http://localhost:5000/graphql',
+  cache: new InMemoryCache(),
+});
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+
     children: [
       {
         path: '/products',
@@ -18,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/',
-        element: <MainServices />,
+        element: <MainServices/>,
       },
     ],
   },
@@ -27,7 +34,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ApolloProvider client={client}>
+      <RouterProvider router={router} />
+    </ApolloProvider>
   </React.StrictMode>,
 );
 
