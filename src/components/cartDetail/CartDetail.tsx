@@ -6,12 +6,7 @@ import ProductCart from '../productCart/ProductCart';
 
 const CartDetail = () => {
   const breadcrumbItems = ['Головна', 'Продукція CSA', 'Вітамін А', 'Crystal Retinal'];
-  const products = [
-    { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 1 },
-    { image: '', title: 'intelligent retinol 3tr', volume: 15, price: 1848, id: 2 },
-    { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 3 },
-    { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 4 },
-  ];
+
   return (
     <>
       <section className={styles.cart}>
@@ -215,9 +210,9 @@ const CartDetail = () => {
           </div>
           <h1 className={styles.title}>Що вам ще може сподобатися...</h1>
           <div className={styles.products}>
-            {products.map(product => (
-              <ProductCart key={product.id} />
-            ))}
+            {/* {products.map(product => (
+              // <ProductCart product={undefined} />
+            ))} */}
           </div>
         </div>
       </section>

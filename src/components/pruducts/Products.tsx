@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './index.module.scss';
 import Breadcrumb from '../breadcrumb/Breadcrumb';
 import ProductCart from '../productCart/ProductCart';
@@ -6,24 +6,16 @@ import { useQuery } from '@apollo/client';
 import { GET_ALL_PRODUCTS } from '../../query/products';
 
 const Products = () => {
-  const {data, loading, error} = useQuery(GET_ALL_PRODUCTS)
-  console.log(data)
+  const { data, loading, error } = useQuery(GET_ALL_PRODUCTS);
+  const [products, setProducts] = useState([]);
+  console.log(error);
+  useEffect(() => {
+    if (!loading) {
+      setProducts(data.getAllProducts);
+    }
+  }, [data]);
+
   const breadcrumbItems = ['Головна', 'Продукція CSA', 'Вітамін А'];
-  const products = [
-    { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 1 },
-    { image: '', title: 'intelligent retinol 3tr', volume: 15, price: 1848, id: 2 },
-    { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 3 },
-    { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 4 },
-    { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 5 },
-    { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 6 },
-    { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 7 },
-    { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 8 },
-    { image: '', title: 'crystal retinal', volume: 30, price: 2184, id: 9 },
-    { image: '', title: 'Retinol 3tr', volume: 15, price: 1624, id: 10 },
-    { image: '', title: 'Retinol 3tr', volume: 15, price: 1624, id: 11 },
-    { image: '', title: 'Retinol 3tr', volume: 15, price: 1624, id: 12 },
-    { image: '', title: 'Retinol 3tr', volume: 15, price: 1624, id: 13 },
-  ];
 
   return (
     <section className={styles.products}>
@@ -40,7 +32,7 @@ const Products = () => {
         </div>
         <div className={styles.productItems}>
           {products.map(product => (
-            <ProductCart key={product.id} />
+            <ProductCart key={product} product={product} />
           ))}
         </div>
       </div>

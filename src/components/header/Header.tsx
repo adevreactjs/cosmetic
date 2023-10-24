@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isOpened, setIsOpened] = useState(false);
-  console.log(isOpened);
 
   return (
     <header className={styles.header}>
