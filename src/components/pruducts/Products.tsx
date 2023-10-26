@@ -3,19 +3,30 @@ import styles from './index.module.scss';
 import Breadcrumb from '../breadcrumb/Breadcrumb';
 import ProductCart from '../productCart/ProductCart';
 import { useQuery } from '@apollo/client';
-import { GET_ALL_PRODUCTS } from '../../query/products';
+import { GET_ALL_PRODUCTS, GET_CART_BY_ID } from '../../query/products';
 
 const Products = () => {
-  const { data, loading, error } = useQuery(GET_ALL_PRODUCTS);
+  const breadcrumbItems = ['Головна', 'Продукція CSA', 'Вітамін А'];
+  const [id, setId] = useState(1);
+  const { data, loading} = useQuery(GET_ALL_PRODUCTS);
+  const { data: cart} = useQuery(GET_CART_BY_ID, {
+    variables: {
+      id: id
+    },
+  });
   const [products, setProducts] = useState([]);
-  console.log(error);
+
   useEffect(() => {
     if (!loading) {
       setProducts(data.getAllProducts);
     }
-  }, [data]);
+  }, [data, cart]);
 
-  const breadcrumbItems = ['Головна', 'Продукція CSA', 'Вітамін А'];
+  const getCartById = (id: number) => {
+    setId(id);
+  };
+    console.log(cart);
+
 
   return (
     <section className={styles.products}>
@@ -32,7 +43,7 @@ const Products = () => {
         </div>
         <div className={styles.productItems}>
           {products.map(product => (
-            <ProductCart key={product} product={product} />
+            <ProductCart key={product} product={product} getCartById={getCartById} />
           ))}
         </div>
       </div>

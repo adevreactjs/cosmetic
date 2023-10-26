@@ -3,6 +3,7 @@ import hryvnia from '../../assets/hryvnia.svg';
 import cart from '../../assets/cart2.svg';
 import styles from './index.module.scss';
 import { FC } from 'react';
+import { Link } from 'react-router-dom';
 
 interface Product {
   image: string;
@@ -13,10 +14,10 @@ interface Product {
 }
 interface Products {
   product: Product;
+  getCartById: (id: number) => void;
 }
 
-const ProductCart: FC<Products> = ({ product }) => {
-  console.log(product);
+const ProductCart: FC<Products> = ({ product, getCartById }) => {
   return (
     <div className={styles.productCart}>
       <div className={styles.imageCart}>
@@ -29,7 +30,9 @@ const ProductCart: FC<Products> = ({ product }) => {
         </div>
       </div>
       <div className={styles.cartInfo}>
-        <button>Детальніше</button>
+        <Link to={'/cart'}>
+          <button onClick={() => getCartById(product.id)}>Детальніше</button>
+        </Link>
         <img src={cart} alt='cart' />
       </div>
     </div>

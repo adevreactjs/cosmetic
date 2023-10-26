@@ -3,9 +3,13 @@ import styles from './index.module.scss';
 import cream from '../../assets/infocart.jpg';
 import Breadcrumb from '../breadcrumb/Breadcrumb';
 import ProductCart from '../productCart/ProductCart';
+import { useQuery } from '@apollo/client';
+import { GET_CART_BY_ID } from '../../query/products';
 
 const CartDetail = () => {
   const breadcrumbItems = ['Головна', 'Продукція CSA', 'Вітамін А', 'Crystal Retinal'];
+  const {data} = useQuery(GET_CART_BY_ID)
+  console.log(data)
 
   return (
     <>
