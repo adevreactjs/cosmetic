@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './index.module.scss';
 import cream from '../../assets/infocart.jpg';
 import Breadcrumb from '../breadcrumb/Breadcrumb';
 import ProductCart from '../productCart/ProductCart';
 import { useQuery } from '@apollo/client';
 import { GET_CART_BY_ID } from '../../query/products';
+import { useParams } from 'react-router-dom';
 
 const CartDetail = () => {
   const breadcrumbItems = ['Головна', 'Продукція CSA', 'Вітамін А', 'Crystal Retinal'];
-  const {data} = useQuery(GET_CART_BY_ID)
-  console.log(data)
+  let { id } = useParams();
+  const { data, loading } = useQuery(GET_CART_BY_ID, {
+    variables: {
+      id: id,
+    },
+  });
 
   return (
     <>
@@ -36,7 +41,7 @@ const CartDetail = () => {
                 </p>
                 <div className={styles.price}>
                   <div className={styles.priceCount}>
-                    2184{' '}
+                    {!loading && data.getCart.price}
                     <svg
                       xmlns='http://www.w3.org/2000/svg'
                       width='17'
@@ -69,8 +74,8 @@ const CartDetail = () => {
                       d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
                       stroke='#17110D'
                       stroke-width='0.904762'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
                     />
                   </svg>
                   <span>Без синтетичних фарбників</span>
@@ -86,8 +91,8 @@ const CartDetail = () => {
                       d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
                       stroke='#17110D'
                       stroke-width='0.904762'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
                     />
                   </svg>
                   <span>Без спирту</span>
@@ -103,8 +108,8 @@ const CartDetail = () => {
                       d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
                       stroke='#17110D'
                       stroke-width='0.904762'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
                     />
                   </svg>
                   <span>Без парабенів</span>
@@ -120,8 +125,8 @@ const CartDetail = () => {
                       d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
                       stroke='#17110D'
                       stroke-width='0.904762'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
                     />
                   </svg>
                   <span>Без фталатів</span>
@@ -139,8 +144,8 @@ const CartDetail = () => {
                       d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
                       stroke='#17110D'
                       stroke-width='0.904762'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
                     />
                   </svg>
                   <span>Внесок у фонд ZIPPER</span>
@@ -156,8 +161,8 @@ const CartDetail = () => {
                       d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
                       stroke='#17110D'
                       stroke-width='0.904762'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
                     />
                   </svg>
                   <span>Без штучних ароматизаторів</span>
@@ -173,8 +178,8 @@ const CartDetail = () => {
                       d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
                       stroke='#17110D'
                       stroke-width='0.904762'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
                     />
                   </svg>
                   <span>Не тестується на тваринах</span>
@@ -190,8 +195,8 @@ const CartDetail = () => {
                       d='M26.4998 0.875L10.0051 20.1248L1.00002 10.503'
                       stroke='#17110D'
                       stroke-width='0.904762'
-                      stroke-linecap='round'
-                      stroke-linejoin='round'
+                      strokeLinecap='round'
+                      strokeLinejoin='round'
                     />
                   </svg>
                   <span>Підходить для веганів</span>

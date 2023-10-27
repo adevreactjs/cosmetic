@@ -14,10 +14,9 @@ interface Product {
 }
 interface Products {
   product: Product;
-  getCartById: (id: number) => void;
 }
 
-const ProductCart: FC<Products> = ({ product, getCartById }) => {
+const ProductCart: FC<Products> = ({ product }) => {
   return (
     <div className={styles.productCart}>
       <div className={styles.imageCart}>
@@ -30,8 +29,8 @@ const ProductCart: FC<Products> = ({ product, getCartById }) => {
         </div>
       </div>
       <div className={styles.cartInfo}>
-        <Link to={'/cart'}>
-          <button onClick={() => getCartById(product.id)}>Детальніше</button>
+        <Link to={`/cart/${product.id}`}>
+          <button>Детальніше</button>
         </Link>
         <img src={cart} alt='cart' />
       </div>

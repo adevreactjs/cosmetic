@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createBrowserRouter, useParams } from 'react-router-dom';
 import Products from './components/pruducts/Products';
 import MainServices from './components/mainServices/MainServices';
 import { ApolloClient, ApolloProvider, InMemoryCache } from '@apollo/client';
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         path: '/',
         element: <MainServices />,
       },
-      { path: '/cart', element: <CartDetail/> },
+      { path: `/cart/:id`, element: <CartDetail /> },
     ],
   },
 ]);

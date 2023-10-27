@@ -7,26 +7,15 @@ import { GET_ALL_PRODUCTS, GET_CART_BY_ID } from '../../query/products';
 
 const Products = () => {
   const breadcrumbItems = ['Головна', 'Продукція CSA', 'Вітамін А'];
-  const [id, setId] = useState(1);
-  const { data, loading} = useQuery(GET_ALL_PRODUCTS);
-  const { data: cart} = useQuery(GET_CART_BY_ID, {
-    variables: {
-      id: id
-    },
-  });
+  const { data, loading } = useQuery(GET_ALL_PRODUCTS);
+
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
     if (!loading) {
       setProducts(data.getAllProducts);
     }
-  }, [data, cart]);
-
-  const getCartById = (id: number) => {
-    setId(id);
-  };
-    console.log(cart);
-
+  }, [data]);
 
   return (
     <section className={styles.products}>
@@ -43,7 +32,7 @@ const Products = () => {
         </div>
         <div className={styles.productItems}>
           {products.map(product => (
-            <ProductCart key={product} product={product} getCartById={getCartById} />
+            <ProductCart key={product} product={product} />
           ))}
         </div>
       </div>
